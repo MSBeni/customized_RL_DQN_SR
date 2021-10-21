@@ -3359,6 +3359,7 @@
       <change beforePath="$PROJECT_DIR$/../Covud_19_DoW/Raw_Twitter/$DJI tweeter/2020-07-28.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Covud_19_DoW/Raw_Twitter/$DJI tweeter/2020-07-29.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Covud_19_DoW/Raw_Twitter/$DJI tweeter/2020-07-30.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Docker_py/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../QuantitativeFinance/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../QuantitativeFinance/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../QuantitativeFinance/Test.py" beforeDir="false" />
@@ -3399,6 +3400,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/classical_Q_Learning" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="openAI_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DQL_RL_in_Practice" />
@@ -3437,7 +3443,7 @@
       <option name="presentableId" value="Default" />
       <updated>1634663437062</updated>
       <workItem from="1634663438173" duration="3460000" />
-      <workItem from="1634834517199" duration="1470000" />
+      <workItem from="1634834517199" duration="1793000" />
     </task>
     <servers />
   </component>
