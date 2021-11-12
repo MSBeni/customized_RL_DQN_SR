@@ -96,6 +96,12 @@ mean_positions_log = []  # to store a running mean of the last 30 results
 epochs = []  # store the epoch for plotting
 
 
+def reduce_epsilon(epsilon, epoch):
+    if BURN_IN <= epoch <= EPSILON_END:
+        epsilon -= EPSILON_REDUCE
+
+    return epsilon
+
 ###################### TRAINING TASKS ##########################
 for epoch in range(EPOCHS):
 
@@ -149,6 +155,6 @@ for epoch in range(EPOCHS):
         ax.plot(epochs, mean_positions_log, label=f"Running Mean: {running_mean}")
         plt.legend()
         fig.canvas.draw()
-######################################################################
 
 env.close()
+plt.show()
