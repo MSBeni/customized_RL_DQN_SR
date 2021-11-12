@@ -10,7 +10,7 @@ EPOCHS = 30000
 BURN_IN = 100
 epsilon = 1
 
-EPSILON_END= 10000
+EPSILON_END = 10000
 EPSILON_REDUCE = 0.0001
 
 ALPHA = 0.8
@@ -99,9 +99,9 @@ def reduce_epsilon(epsilon, epoch):
 
     return epsilon
 
+
 ###################### TRAINING TASKS ##########################
 for epoch in range(EPOCHS):
-
     # TODO: Get initial observation and discretize them. Set done to False
     #########################################
     observstions = env.reset()
