@@ -81,11 +81,8 @@ def compute_next_q_value(old_q_value, reward, next_optimal_q_value):
     return old_q_value + ALPHA * (reward + GAMMA * next_optimal_q_value - old_q_value)
 
 
-####### VISUALIZATION CODE FOR YOU. TOTALLY OPTIONAL. ##########################
-########## FEEL FREE TO REMOVE OR ADD YOUR OWN VISUAL CODE. #################
-
 log_interval = 100  # How often do we update the plot? (Just for performance reasons)
-### Here we set up the routine for the live plotting of the achieved points ######
+# Here we set up the routine for the live plotting of the achieved points ######
 fig = plt.figure()
 ax = fig.add_subplot(111)
 plt.ion()
@@ -158,3 +155,6 @@ for epoch in range(EPOCHS):
 
 env.close()
 plt.show()
+
+
+# Thanks to the www.pieriandata.com provided data
