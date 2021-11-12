@@ -158,3 +158,22 @@ plt.show()
 
 
 # Thanks to the www.pieriandata.com provided data
+
+# Test Phase
+observation = env.reset()
+for counter in range(3000):
+    env.render()
+
+    # TODO: Get discretized observation
+    discrete_state = discretize_observation(observation, all_bins)  # Get discretized observation
+
+    # TODO: Chose action from Q-Table
+    action = np.argmax(q_table[discrete_state])  # and chose action from the Q-Table
+
+    # TODO: Perform the action
+    observation, reward, done, info = env.step(action)  # Finally perform the action
+
+    if done:
+        print(f"done")
+        break
+env.close()
