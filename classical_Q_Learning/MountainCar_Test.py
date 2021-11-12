@@ -126,21 +126,15 @@ for epoch in range(EPOCHS):
         # Compute next Q-Value and insert it into the table
         next_Q = compute_next_q_value(old_Q, reward, next_opt_Q)
         q_table[discretized_observations + (action,)] = next_Q
-        ##########################################
         # Update the old state with the new one
-        #########################################
         discretized_observations = new_discretized_obs
-        ##########################################
 
-        ##############################
         ##  Only for plotting the results - store the highest point the car is able to reach
         if position > max_position:
             max_position = position
 
     # Reduce epsilon
-    #########################################
     epsilon = reduce_epsilon(epsilon, epoch)
-    ##########################################
     ##############################################################################
 
     max_position_log.append(max_position)  # log the highest position the car was able to reach
